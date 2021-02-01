@@ -1,0 +1,34 @@
+# Checking for the root passwd if it shows he error beacuse the before that there is no passwd for root
+# Now we have to create new passwd for the root 
+# The commands should be the 
+
+alakrishna@balakrishna-VirtualBox:~$ su
+Password: 
+su: Authentication failure
+balakrishna@balakrishna-VirtualBox:~$ su root
+Password: 
+su: Authentication failure
+balakrishna@balakrishna-VirtualBox:~$ sudo passwd root
+New password: 
+Retype new password: 
+passwd: password updated successfully
+balakrishna@balakrishna-VirtualBox:~$ su
+Password: 
+
+root@balakrishna-VirtualBox:/home/balakrishna# 
+# ls checking the list of files
+
+#ps commands(process status)
+balakrishna@balakrishna-VirtualBox:~$ ps
+    PID TTY          TIME CMD
+   2757 pts/0    00:00:00 bash
+   3676 pts/0    00:00:00 ps
+  # process list all
+  # balakrishna@balakrishna-VirtualBox:~$ ps -a 
+    PID TTY          TIME CMD
+   1251 tty2     00:00:10 Xorg
+   1286 tty2     00:00:00 gnome-session-b
+   3677 pts/0    00:00:00 ps
+   # installation of kafka the steps are very easy
+
+
